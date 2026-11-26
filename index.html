@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>نواف الجودي | ملف الأعمال</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: هادئ ومهني، بلغة الأرقام والأثر، كتقرير أثر شخصي
+   IDEA: ملف الأعمال كـ"تقرير أثر" لمسوّق في القطاع غير الربحي بمكة
+   PICTURE: أفق مكة ليلًا، وأبراجه أعمدة التبرعات التي جمعها (1.3م، 800ألف، 500ألف)
+   COLOUR and TYPE: حبر أخضر مزرق عميق، رمل الحجر، فيروزي حاد؛ Readex Pro للعناوين وIBM Plex Sans Arabic للنص
+   LAYOUT: بطل داكن بعرض الشاشة، شريط أرقام، دراسات حالة، معرض، خط زمني، تعليم ومهارات، تواصل */
+:root{color-scheme:light dark;
+--bg:light-dark(#fbfaf6,#0b1719);--ink:light-dark(#0f2427,#e8efee);--mute:light-dark(#55676a,#9fb3b2);
+--deep:#0b3a3d;--deep2:#072a2c;--sand:light-dark(#efe7d7,#1a2a2a);--line:light-dark(#e2dccd,#24393a);
+--card:light-dark(#ffffff,#112325);--acc:#13a98d;--gold:#c9a66b}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.75 "IBM Plex Sans Arabic",Tahoma,sans-serif;overflow-x:clip}
+h1,h2,h3{font-family:"Readex Pro","IBM Plex Sans Arabic",sans-serif;line-height:1.2;margin:0;text-wrap:balance}
+h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:10px}
+h3{font-size:20px}
+p{margin:0 0 12px}
+a{color:inherit}
+.band{padding:clamp(36px,5vw,72px) max(5vw,16px)}
+.wrap{max-width:1180px;margin-inline:auto}
+.lead{color:var(--mute);max-width:62ch;margin-bottom:28px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--deep2) 92%,transparent);backdrop-filter:blur(8px);color:#e9f1ef}
+nav .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;padding:8px max(5vw,16px)}
+nav b{font-family:"Readex Pro";margin-inline-end:auto;white-space:nowrap;padding-inline-end:16px}
+nav a{flex:none;text-decoration:none;padding:10px 12px;border-radius:8px;font-size:14.5px;color:#cfe0dc}
+nav a:hover,nav a:focus-visible{background:#ffffff1a;color:#fff;outline:none}
+/* hero */
+.hero{background:linear-gradient(180deg,var(--deep2),var(--deep) 70%);color:#eef5f3;padding-bottom:0}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:end}
+.kicker{color:var(--gold);font-weight:600;margin-bottom:8px}
+.hero h1{font-size:clamp(40px,6vw,64px);line-height:1.05;margin-bottom:6px}
+.hero .role{font-size:clamp(18px,2vw,22px);color:#bfe3da;margin-bottom:18px;font-family:"Readex Pro";font-weight:500}
+.hero p{color:#d4e2df;max-width:56ch}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 clamp(28px,4vw,56px)}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid #ffffff38;color:#fff;background:transparent;font:600 15px "IBM Plex Sans Arabic";cursor:pointer}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:#04221d}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.contact-line{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+.fig{position:relative;aspect-ratio:10/8.2;align-self:end}
+.fig svg{position:absolute;inset:0;width:100%;height:100%}
+/* stats */
+.stats{background:var(--sand)}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.stat{background:var(--card);border-radius:14px;padding:20px 20px 16px;border:1px solid var(--line)}
+.stat .n{font:700 clamp(28px,3.2vw,38px)/1.1 "Readex Pro";color:var(--deep);white-space:nowrap}
+:root[data-theme=dark] .stat .n{color:#7fe0cb}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .stat .n{color:#7fe0cb}}
+.stat .l{color:var(--mute);font-size:14.5px;margin-top:6px}
+/* cases */
+.cases{display:grid;gap:18px}
+.case{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(16px,3vw,36px);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,3vw,34px)}
+.case .tag{display:inline-block;font-size:13.5px;color:var(--acc);font-weight:600;margin-bottom:6px}
+.case h3{font-size:clamp(20px,2.2vw,26px);margin-bottom:10px}
+.case ul{margin:0;padding-inline-start:20px}.case li{margin-bottom:6px}
+.kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-content:start}
+.kpi{border-radius:12px;background:var(--sand);padding:14px}
+.kpi b{display:block;font:700 clamp(19px,1.9vw,24px)/1.2 "Readex Pro";overflow-wrap:anywhere}
+.kpi b small,.stat .n small{font-size:.6em;font-weight:500}
+.kpi span{font-size:13.5px;color:var(--mute)}
+.bars{grid-column:1/-1;display:grid;gap:8px;margin-top:4px}
+.bar{display:grid;grid-template-columns:8.5em minmax(0,1fr) 5.5em;gap:10px;align-items:center;font-size:14px}
+.bar i{display:block;height:12px;border-radius:6px;background:var(--acc)}
+.bar em{font-style:normal;text-align:left;white-space:nowrap;color:var(--mute)}
+.src{font-size:13px;color:var(--mute);margin-top:10px}
+.others{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.oc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:10px;align-content:start}
+.oc .tag,.oc h4,.oc p{grid-column:1/-1}
+.oc .tag{color:var(--acc);font-size:13.5px;font-weight:600}
+.oc h4{font:600 19px "Readex Pro";margin:0}
+.oc p{font-size:15px;color:var(--mute);margin:0 0 4px}
+.ok{background:var(--sand);border-radius:10px;padding:10px 12px}
+.ok b{display:block;font:700 20px "Readex Pro"}
+.ok span{font-size:13px;color:var(--mute)}
+.orgs{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14.5px;color:#a9cfc5;margin:-6px 0 18px}
+.orgs span:not(:last-child):after{content:"·";margin-inline-start:14px;color:var(--gold)}
+.gov{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.gc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,3vw,30px)}
+.gc .top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:10px}
+.gc .big{font:700 clamp(34px,4vw,46px)/1 "Readex Pro";color:var(--deep);white-space:nowrap;text-align:center}
+.gc .big small{display:block;font:400 13px "IBM Plex Sans Arabic";color:var(--mute);margin-top:6px}
+.gc ul{margin:0;padding-inline-start:20px}.gc li{margin-bottom:6px}
+.hl{margin-top:14px;border-inline-start:3px solid var(--gold);background:var(--sand);padding:10px 14px;border-radius:0 10px 10px 0;font-size:15px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;font-size:14px}
+.flow span{background:var(--sand);border-radius:999px;padding:5px 12px}.flow i{font-style:normal;color:var(--gold)}
+.v2030{display:inline-block;background:var(--deep);color:#e9f1ef;border-radius:999px;padding:4px 14px;font-size:13.5px;margin-bottom:12px}
+.caps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.cap.wide{grid-column:1/-1}
+.subh{font-size:clamp(19px,2.2vw,23px);margin:6px 0 14px;display:flex;align-items:center;gap:10px}.subh:before{content:"";width:5px;height:22px;border-radius:3px;background:var(--gold)}
+.site{margin-bottom:clamp(36px,5vw,56px)}
+.cap{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.cap h3{font-size:18px;margin-bottom:6px}.cap p{font-size:15px;color:var(--mute);margin-bottom:10px}
+.cap .ev{border-top:1px dashed var(--line);padding-top:10px;font-size:14px;font-weight:600;color:var(--acc)}
+.cap .who{display:inline-block;font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 10px;margin-bottom:8px;color:var(--mute)}
+/* gallery */
+.masonry{columns:3 260px;column-gap:16px}
+figure.wide{margin:0 0 16px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}figure.wide img{display:block;width:100%;height:auto}figure.wide figcaption{padding:10px 14px;font-size:14px;color:var(--mute)}figure.wide figcaption b{display:block;color:var(--ink);font-family:"Readex Pro";font-weight:500}
+.masonry figure{break-inside:avoid;margin:0 0 16px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.masonry img{display:block;width:100%;height:auto}
+.masonry figcaption{padding:10px 14px;font-size:14px;color:var(--mute)}
+.masonry figcaption b{display:block;color:var(--ink);font-family:"Readex Pro";font-weight:500}
+.site{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(20px,4vw,48px);align-items:start}
+.sitelist{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:10px}
+.sitelist li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;color:var(--mute)}
+.sitelist b{display:block;color:var(--ink);font-weight:600}
+.browser{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:0 18px 40px -24px #0b3a3d66}
+.bar3{display:flex;align-items:center;gap:6px;padding:4px 6px 10px;direction:ltr}
+.bar3 i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.bar3 span{margin-inline-start:10px;font-size:12.5px;color:var(--mute);background:var(--sand);border-radius:999px;padding:3px 12px}
+.shot{height:min(640px,75vh);overflow-y:auto;border-radius:10px;border:1px solid var(--line)}
+.shot img{display:block;width:100%}
+.shot:focus-visible{outline:3px solid var(--acc)}
+.cols{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px;align-items:end;height:170px;margin:24px 0 26px}
+.cols div{position:relative;background:var(--acc);border-radius:5px 5px 0 0;min-height:3px}
+.cols div.pk{background:var(--gold)}
+.cols span{position:absolute;bottom:-22px;inset-inline:-4px;text-align:center;font-size:12px;color:var(--mute)}
+.cols b{position:absolute;top:-22px;inset-inline:-14px;text-align:center;font-size:12px;white-space:nowrap}
+/* timeline */
+.tl{position:relative;display:grid;gap:14px;padding-inline-start:28px}
+.tl::before{content:"";position:absolute;inset-inline-start:8px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.job{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.job::before{content:"";position:absolute;inset-inline-start:-26px;top:24px;width:14px;height:14px;border-radius:50%;background:var(--acc);border:3px solid var(--bg)}
+.job .when{font-size:14px;color:var(--mute)}
+.job .org{color:var(--acc);font-weight:600;font-size:15px}
+.job ul{margin:8px 0 0;padding-inline-start:20px}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.box h3{margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--sand);border-radius:999px;padding:5px 12px;font-size:14px}
+.edu{margin-bottom:12px}.edu b{display:block}.edu span{color:var(--mute);font-size:14.5px}
+footer{background:var(--deep2);color:#dbe8e5}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;align-items:center}
+footer h2{color:#fff}
+.cl{display:grid;gap:10px}
+.cl div{display:flex;gap:10px;align-items:center;background:#ffffff10;border-radius:12px;padding:12px 14px;flex-wrap:wrap}
+.cl small{color:#9fc0b9;min-width:5.5em}
+.copy,.copy-x{margin-inline-start:auto;min-height:36px;padding:4px 12px;border-radius:8px;border:1px solid #ffffff40;background:transparent;color:#fff;cursor:pointer;font:500 13.5px "IBM Plex Sans Arabic"}
+@media(max-width:900px){.gov{grid-template-columns:minmax(0,1fr)}.caps{grid-template-columns:repeat(2,minmax(0,1fr))}.others{grid-template-columns:minmax(0,1fr)}.site,.hero .wrap,.case,footer .wrap,.two{grid-template-columns:minmax(0,1fr)}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.fig{max-width:560px;width:100%;margin-inline:auto}}
+@media(max-width:600px){.caps{grid-template-columns:minmax(0,1fr)}.masonry{columns:2 150px;column-gap:10px}body{font-size:16px}.kpis{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.bar{grid-template-columns:6.5em minmax(0,1fr) 4.8em}.gal img{height:240px}nav b{display:none}}
+@media(prefers-reduced-motion:no-preference){.tower{transform-box:fill-box;transform-origin:bottom;animation:rise 1.4s cubic-bezier(.2,.8,.2,1) both}.tower:nth-of-type(2){animation-delay:.15s}.tower:nth-of-type(3){animation-delay:.3s}@keyframes rise{from{transform:scaleY(0)}}}
+</style>
+</head>
+<body>
+
+<nav aria-label="أقسام الصفحة"><div class="wrap">
+<b>نواف الجودي</b>
+<a href="#numbers">الأرقام</a><a href="#cases">دراسات حالة</a><a href="#gov">الخبرة الحكومية</a><a href="#gallery">نماذج الأعمال</a><a href="#experience">الخبرات</a><a href="#education">التعليم والمهارات</a><a href="#contact">تواصل</a>
+</div></nav>
+
+<header class="band hero">
+<div class="wrap">
+<div>
+<div class="kicker">ملف الأعمال · مكة المكرمة</div>
+<h1>نواف سعد الجودي</h1>
+<div class="role">التسويق وتنمية الموارد والاتصال</div>
+<div class="orgs"><span>الهيئة الملكية لمدينة مكة المكرمة</span><span>وزارة الحج والعمرة</span><span>جمعية يدًا بيد</span><span>جمعية الشرائع</span><span>شركة المياه الوطنية</span></div>
+<p>مختص في الاتصال وتنمية الموارد في مكة المكرمة، بخبرة تزيد على ست سنوات بين العمل الحكومي في منظومة الحج والقطاع غير الربحي والاتصال المؤسسي، وأركّز على خدمة الجمهور، وبناء العلاقة مع الشركاء وأصحاب المصلحة، وتعزيز سمعة الجهة.</p>
+<div class="cta">
+<a class="btn pri" href="#cases">شاهد دراسات الحالة</a>
+<a class="btn" href="https://www.linkedin.com/in/nawaf-aljoudi">LinkedIn</a>
+<a class="btn" href="#contact">تواصل معي</a>
+</div>
+</div>
+<div class="fig" role="img" aria-label="رسم لأفق مكة ليلًا، تظهر فيه ثلاثة أبراج تمثل توزيع ما جمعه: 50% للأوقاف، و31% عبر الحملات الرقمية، و19% من الجهات المانحة">
+<svg viewBox="0 0 500 410" preserveAspectRatio="xMidYMax meet">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b3a3d" stop-opacity="0"/><stop offset="1" stop-color="#c9a66b" stop-opacity=".28"/></linearGradient>
+<linearGradient id="tw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3fe0bf"/><stop offset=".55" stop-color="#13a98d"/><stop offset="1" stop-color="#0c6f60"/></linearGradient>
+<linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14514f"/><stop offset="1" stop-color="#0a3436"/></linearGradient>
+<linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d4244"/><stop offset="1" stop-color="#072a2c"/></linearGradient>
+</defs>
+<rect width="500" height="410" fill="url(#sky)"/>
+<circle cx="390" cy="92" r="26" fill="#e9d6ad" opacity=".9"/><circle cx="400" cy="86" r="24" fill="#0e3e41"/>
+<g fill="#ffffff" opacity=".55"><circle cx="70" cy="60" r="1.4"/><circle cx="150" cy="34" r="1.1"/><circle cx="250" cy="70" r="1.3"/><circle cx="320" cy="30" r="1"/><circle cx="460" cy="150" r="1.2"/><circle cx="30" cy="140" r="1"/></g>
+<path d="M0 300 L60 250 L110 280 L170 222 L230 270 L290 236 L350 276 L420 228 L500 268 L500 410 L0 410Z" fill="url(#m1)"/>
+<!-- clock tower -->
+<g opacity=".92"><rect x="412" y="168" width="26" height="140" fill="#0a3134"/><rect x="406" y="196" width="38" height="112" fill="#0b3639"/><circle cx="425" cy="186" r="9" fill="#7fe0cb" opacity=".9"/><path d="M418 168 L425 120 L432 168Z" fill="#0a3134"/><line x1="425" y1="120" x2="425" y2="104" stroke="#c9a66b" stroke-width="2"/></g>
+<!-- towers = funds -->
+<g>
+<g class="tower"><rect x="70" y="96" width="74" height="232" rx="4" fill="url(#tw)"/><rect x="70" y="96" width="5" height="232" fill="#bff5e7" opacity=".6"/></g>
+<g class="tower"><rect x="176" y="186" width="74" height="142" rx="4" fill="url(#tw)" opacity=".92"/><rect x="176" y="186" width="5" height="142" fill="#bff5e7" opacity=".5"/></g>
+<g class="tower"><rect x="282" y="240" width="74" height="88" rx="4" fill="url(#tw)" opacity=".85"/><rect x="282" y="240" width="5" height="88" fill="#bff5e7" opacity=".45"/></g>
+</g>
+<g font-family="Readex Pro,sans-serif" fill="#ffffff" text-anchor="middle">
+<text x="107" y="84" font-size="22" font-weight="700">50%</text>
+<text x="213" y="174" font-size="22" font-weight="700">31%</text>
+<text x="319" y="228" font-size="22" font-weight="700">19%</text>
+</g>
+<path d="M0 330 L80 300 L150 324 L240 296 L330 326 L420 300 L500 322 L500 410 L0 410Z" fill="url(#m2)"/>
+<g font-family="IBM Plex Sans Arabic,sans-serif" fill="#cfe5df" font-size="14" text-anchor="middle">
+<text x="107" y="358">الأوقاف</text>
+<text x="213" y="358">حملات رقمية</text>
+<text x="319" y="358">جهات مانحة وتجار</text>
+</g>
+<text x="250" y="396" text-anchor="middle" font-family="IBM Plex Sans Arabic,sans-serif" font-size="13" fill="#9fc6bd">توزيع نحو 2.6 مليون ريال جمعتها عبر حملات تنمية الموارد</text>
+</svg>
+</div>
+</div>
+</header>
+
+<section class="band stats" id="numbers">
+<div class="wrap">
+<h2>الأثر بالأرقام</h2>
+<p class="lead">أرقام من عملي في التسويق وتنمية الموارد والعمل الميداني في مواسم الحج.</p>
+<div class="grid4" id="statGrid"></div>
+</div>
+</section>
+
+<section class="band" id="cases">
+<div class="wrap">
+<h2>دراسات حالة</h2>
+<p class="lead">أعمال من جمعية الدعوة والإرشاد بالشرائع (2023–2025)، ثم من جمعية يدًا بيد للخدمات الإنسانية، وهي جمعية تأسست في نوفمبر 2024 وانضممت إليها في أبريل 2025 لأبني إدارة التسويق وتنمية الموارد من البداية. الأرقام من تقارير الأداء الرسمية التي رفعتها للإدارة، ومن لوحات المتجر ومنصات الإعلان وGoogle Analytics.</p>
+<div class="cases">
+
+<article class="case">
+<div>
+<span class="tag">جمعية الشرائع · 2024 · الحملات الرقمية</span>
+<h3>91 حملة رقمية رفعت التبرعات 3.6 أضعاف عام 2023</h3>
+<p>في جمعية الدعوة والإرشاد وتوعية الجاليات بالشرائع أدرت التسويق الإلكتروني طوال عام 2024 على سناب شات وتيك توك وتويتر. أطلقت 91 حملة إعلانية، وأعدت توظيف 25 مادة إعلانية فيها بتنويع الرسائل والجمهور المستهدف، فبقيت تكلفة الإنتاج منخفضة والإنفاق موجّهًا للوصول.</p>
+<ul>
+<li>وزّعت التبرعات على ثلاث قنوات: حساب الوقف والحساب العام ومتجر الجمعية، وتابعت دخل كل قناة على حدة.</li>
+<li>نحو ثلثي الدخل (66%) ذهب إلى وقف الجمعية عبر التحويل لحساب الوقف.</li>
+</ul>
+</div>
+<div class="kpis">
+<div class="kpi"><b>3.6×</b><span>نمو إجمالي التبرعات عن 2023</span></div>
+<div class="kpi"><b>877%</b><span>العائد على الاستثمار</span></div>
+<div class="kpi"><b>10.6 <small>مليون</small></b><span>مرة ظهور للإعلانات</span></div>
+<div class="kpi"><b>97,954</b><span>نقرة إلى صفحات التبرع</span></div>
+<div class="bars" id="sharaiBars"></div>
+</div>
+</article>
+<article class="case">
+<div>
+<span class="tag">يدًا بيد · متجر التبرعات 2026</span>
+<h3>متجر التبرعات: نمو 10.9 أضعاف، ونحو 12 ألف متبرع في 2026</h3>
+<p>بعد سنتها الأولى أعدت بناء متجر الجمعية وقنواته: حملات ممولة، وروابط تتبع لكل مؤثر، وتبرع سريع، واستقطاع شهري، وتقارير أثر في واجهة المتجر. وأتابع كل ذلك في لوحة واحدة تجمع المتجر وGoogle Analytics ومنصات التواصل والجهات المانحة.</p>
+<ul>
+<li>44 رابط تتبع للمؤثرين جلبت 21% من تبرعات المتجر، فصار لكل مؤثر رقم يُقاس به.</li>
+<li>سناب شات وحده جلب 19% من تبرعات المتجر، حسب Google Analytics.</li>
+<li>زار المتجر 364 ألف مستخدم في 2026، تبرّع منهم 11,974 متبرعًا، أي نحو 3.3% من الزوار.</li>
+<li>9 تقارير إغلاق مرفوعة لمنصة إحسان في 2026.</li>
+</ul>
+</div>
+<div class="kpis">
+<div class="kpi"><b>48%</b><span>من تبرعات السنة جاءت في شهر موسم الحج (مايو)</span></div>
+<div class="kpi"><b>11,974</b><span>متبرعًا في 2026 (مقابل 1,279 في 2025)</span></div>
+<div class="kpi"><b>20,135</b><span>عملية تبرع</span></div>
+<div class="kpi"><b>10.9×</b><span>مقارنة بسنة المتجر الأولى 2025</span></div>
+<div style="grid-column:1/-1"><div class="cols" id="monthCols" role="img" aria-label="تبرعات المتجر شهريًا في 2026، وأعلاها مايو في موسم الحج بنحو نصف تبرعات السنة"></div></div>
+</div>
+</article>
+<article class="case">
+<div>
+<span class="tag">حملة موسمية · متجر التبرعات</span>
+<h3>موسم الحج 1447: سقيا ضيوف الرحمن</h3>
+<p>أعددت الخطة التسويقية لمشروع سقيا الماء لضيوف الرحمن، وأدرت الحملة على المتجر ومنصات التواصل، مع تغطية مصورة يومية للتوزيع امتدت 25 يومًا من أواخر ذي القعدة إلى 20 ذي الحجة.</p>
+<ul>
+<li>رسالة شكر بالأرقام بعد الموسم، تحوّل المتبرع الموسمي إلى كفيل شهري يبدأ من 50 ريالًا.</li>
+<li>تقرير أثر مرئي للمتبرعين يربط كل تبرع بما تحقق على الأرض.</li>
+</ul>
+</div>
+<div class="kpis">
+<div class="kpi"><b>6,830</b><span>متبرعًا في الموسم</span></div>
+<div class="kpi"><b>25 <small>يومًا</small></b><span>تغطية مصورة يومية للتوزيع</span></div>
+<div class="kpi"><b>2,264</b><span>متبرعًا لمشروع تفريج الكرب</span></div>
+<div class="kpi"><b>3 <small>مستويات</small></b><span>للعطاء الشهري: 50 و100 و300 ريال</span></div>
+</div>
+</article>
+<article class="case">
+<div>
+<span class="tag">إعلانات مدفوعة · سناب شات</span>
+<h3>حملة كفالة الأيتام: من الوعي إلى التبرع</h3>
+<p>خطة ممولة على سناب شات لمدة 4 أسابيع، تبدأ بحملات وعي لجمهور جديد ثم حملات تحويل مباشرة إلى متجر الجمعية، مع رسالة واضحة: «اكفل يتيمًا / تبرع الآن».</p>
+<ul>
+<li>قسّمت الحملة إلى خمس حملات فرعية بتصاميم أساسية ونسخ مختلفة، وعدّلت الإنفاق أسبوعيًا حسب النتائج.</li>
+<li>ربطت المتجر بـ Snap Pixel وواجهة Conversions API، واجتاز الربط تدقيق جودة الإشارات من سناب شات في أحداث الشراء والإضافة للسلة وزيارة الصفحة.</li>
+<li>تابعت مؤشرات: المشاهدات، زيارات المتجر، نسبة النقر، عدد الكفالات، معدل التحويل، تكلفة المتبرع، والعائد على الإنفاق.</li>
+</ul>
+</div>
+<div class="kpis">
+<div class="kpi"><b>4 <small>أسابيع</small></b><span>مدة الحملة على سناب شات</span></div>
+<div class="kpi"><b>5</b><span>حملات فرعية بنسخ إعلانية مختلفة</span></div>
+<div class="kpi"><b>مرحلتان</b><span>وعي لجمهور جديد، ثم تحويل إلى المتجر</span></div>
+<div class="kpi"><b>Pixel + CAPI</b><span>ربط اجتاز تدقيق جودة الإشارات</span></div>
+</div>
+</article>
+</div>
+<h3 style="margin:34px 0 14px;font-size:24px">أعمال أخرى</h3>
+<div class="others">
+<div class="oc"><span class="tag">جمعية الشرائع · 2023</span><h4>تأسيس التسويق الإلكتروني</h4><p>المتجر وسناب شات وقاعدة واتساب بـ 11 ألف رقم، وتوصية بالتوسع لمنصات جديدة طُبّقت في 2024.</p><div class="ok"><b>7,414</b><span>عملية تبرع</span></div><div class="ok"><b>509%</b><span>عائد على الاستثمار</span></div></div>
+<div class="oc"><span class="tag">يدًا بيد · منذ 2025</span><h4>بناء إدارة الاتصال والتسويق من الصفر</h4><p>الخطة الأولى، وتسعير الأسهم، وفتح الحسابات الإعلانية، ولوحة Power BI للإدارة، وفريق من 3 أشخاص.</p><div class="ok"><b>3</b><span>منصات إعلانية: Google وMeta وسناب شات</span></div><div class="ok"><b>17</b><span>فعالية، أكبرها 350 حاضرًا</span></div></div>
+<div class="oc"><span class="tag">شراكات · منح</span><h4>الجهات المانحة والشركات</h4><p>ملف كامل لكل جهة من خطاب الطلب إلى تقرير الإغلاق، وعروض شراكة 2026 في ثمانية قطاعات.</p><div class="ok"><b>64</b><span>جهة مانحة ووقفية</span></div><div class="ok"><b>62</b><span>عرض شراكة لشركات كبرى</span></div></div>
+</div>
+</div>
+</section>
+
+<section class="band" id="gov" style="background:var(--sand)">
+<div class="wrap">
+<span class="v2030">برنامج خدمة ضيوف الرحمن · رؤية المملكة 2030</span>
+<h2>الخبرة الحكومية والميدانية</h2>
+<p class="lead">خمسة مواسم في جهتين حكوميتين، بين مراقبة الخدمات المقدمة للحجاج والاتصال مع الركاب والحجاج في مركز النقل العام.</p>
+<div class="gov">
+<article class="gc">
+<div class="top"><div><span class="tag" style="color:var(--acc);font-weight:600;font-size:13.5px">جهة حكومية · موسمان 2026</span><h3 style="margin:4px 0 2px">مراقب حركة، ثم كاتب محتوى، مركز النقل العام</h3><div style="color:var(--mute);font-size:14.5px">الهيئة الملكية لمدينة مكة المكرمة والمشاعر المقدسة</div></div><div class="big">100<small>حالة تابعتها</small></div></div>
+<ul><li>كتابة التنبيهات والإعلانات والرسائل التوعوية للركاب والحجاج.</li><li>صياغة المراسلات الرسمية والتعاميم والملخصات.</li><li>الإشراف على فرق التصوير والتغطية الميدانية، ورفع تقارير التفاعل على المنصات.</li></ul>
+<div class="hl"><b>مهمة خاصة:</b> مندوب الهيئة في غرفة القيادة والسيطرة في حج 1447هـ، أنقل المعلومات بين الغرفة ومركز النقل.</div>
+</article>
+<article class="gc">
+<div class="top"><div><span class="tag" style="color:var(--acc);font-weight:600;font-size:13.5px">جهة حكومية · 3 مواسم (1444 – 1446 هـ)</span><h3 style="margin:4px 0 2px">مراقب خدمات حج وعمرة</h3><div style="color:var(--mute);font-size:14.5px">وزارة الحج والعمرة</div></div><div class="big">400<small>بلاغ وجولة ميدانية</small></div></div>
+<ul><li>مراقبة خدمات الشركات للحجاج في المساكن والنقل والإعاشة والمشاعر.</li><li>التنسيق مع فرع الوزارة ولجنة المراجعة والتدقيق ومراكز عناية نسك.</li><li>توثيق المخالفات، وتقارير واستبيانات دورية عن جودة الخدمة.</li></ul>
+<div class="flow"><span>رصد ميداني</span><i>←</i><span>بلاغ في CRM</span><i>←</i><span>تصعيد</span><i>←</i><span>متابعة حتى الإغلاق</span></div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="band" id="offer">
+<div class="wrap">
+<h2>قدرات مهنية مثبتة بالأرقام</h2>
+<p class="lead">من عملي في الاتصال والتسويق والعمل الميداني، وتناسب إدارات الاتصال المؤسسي والتسويق والمسؤولية الاجتماعية وتجربة المستفيد.</p>
+<div class="caps">
+<div class="cap"><span class="who">الاتصال المؤسسي</span><h3>الكتابة الرسمية والمحتوى</h3><p>رسائل توعوية ومراسلات وتعاميم وبيانات صحفية بالعربية والإنجليزية.</p><div class="ev">الهيئة الملكية · المياه الوطنية</div></div>
+<div class="cap"><span class="who">التسويق</span><h3>حملات رقمية تُقاس بالعائد</h3><p>تخطيط الحملات على سناب شات وتيك توك وGoogle وMeta، وتتبع التحويلات بـ Pixel وAPI.</p><div class="ev">عائد 877% · 10.6 مليون ظهور</div></div>
+<div class="cap"><span class="who">المسؤولية الاجتماعية</span><h3>الشراكات المجتمعية (CSR)</h3><p>عروض شراكة ورعاية تربط برامج الشركات بأثر مجتمعي يُقاس ويُوثّق.</p><div class="ev">62 عرض شراكة لشركات كبرى</div></div>
+<div class="cap"><span class="who">تجربة المستفيد</span><h3>البلاغات وجودة الخدمة</h3><p>استقبال الشكاوى في CRM، والتصعيد، والمتابعة حتى الإغلاق، واقتراح التحسينات.</p><div class="ev">400 بلاغ في مواسم الحج</div></div>
+<div class="cap"><span class="who">الإدارة والحوكمة</span><h3>التقارير ومؤشرات الأداء</h3><p>تقارير دورية للإدارة العليا، ولوحات Power BI، والامتثال لمتطلبات الجهات المشرفة.</p><div class="ev">9 تقارير لمنصة إحسان</div></div>
+<div class="cap"><span class="who">العلاقات العامة</span><h3>الفعاليات والمراسم</h3><p>تنظيم الفعاليات والمؤتمرات، والمراسم والتشريفات، والتغطية الإعلامية.</p><div class="ev">17 فعالية · أكبرها 350 حاضرًا</div></div>
+</div>
+</div>
+</section>
+
+<section class="band" id="gallery" style="background:var(--sand)">
+<div class="wrap">
+<h2>نماذج الأعمال</h2>
+<p class="lead">موقع بنيته وصممته، وتصاميم أعددت فكرتها ونصوصها ووجّهت تنفيذها لمتجر الجمعية ومنصاتها.</p>
+<div class="site" id="website">
+<div>
+<h3 class="subh">الموقع الرسمي للجمعية</h3>
+<p class="lead" style="margin-bottom:16px">بنيت الموقع الرسمي لجمعية يدًا بيد (handin.org.sa) وصممته، وخططت صفحته الرئيسية لتنقل الزائر من الثقة إلى التبرع في صفحة واحدة.</p>
+<ul class="sitelist">
+<li><b>تبرع سريع في أول الشاشة</b>مبالغ جاهزة (50 و100 و250 ريالًا) واختيار المشروع والدفع بمدى وApple Pay.</li>
+<li><b>شريط الثقة</b>الترخيص، والقوائم المالية المراجعة، والدراسة الميدانية لكل حالة، والتقارير المصورة.</li>
+<li><b>أثر عطائكم بالأرقام</b>522 أسرة، و310 سلال، و62 يتيمًا، و20 منزلًا.</li>
+<li><b>14 بابًا للخير</b>مصنفة في سبعة مجالات، لكل باب سهم وبطاقة بهوية موحدة.</li>
+<li><b>التقارير المرئية والشفافية</b>فيديوهات الأثر، والتقرير السنوي، والحوكمة، والأخبار، وشركاء النجاح.</li>
+</ul>
+<a class="btn pri" href="https://www.handin.org.sa/" style="margin-top:8px">زيارة الموقع</a>
+</div>
+<div class="browser">
+<div class="bar3"><i></i><i></i><i></i><span>handin.org.sa</span></div>
+<div class="shot" tabindex="0" aria-label="الصفحة الرئيسية كاملة، مرّر للأسفل"><img src="site-full.jpg" alt="لقطة كاملة للصفحة الرئيسية لموقع جمعية يدًا بيد" loading="lazy"></div>
+<p class="src" style="margin:8px 4px 0">مرّر داخل الإطار لترى الصفحة كاملة.</p>
+</div>
+</div>
+<h3 class="subh">تصاميم الحملات والمحتوى</h3>
+<p class="lead">حملات موسمية، وبنرات للموقع والمتجر، وإعلانات بسعر السهم، ومحتوى أسبوعي.</p>
+<figure class="wide"><img src="b-tafreej.jpg" alt="تفريج الكرب: بنر حملة الصدقة بثلاث فئات للتبرع (100 و200 و500 ريال)" loading="lazy"><figcaption><b>تفريج الكرب</b>بنر الحملة للموقع والمتجر، بثلاث فئات تبرع جاهزة</figcaption></figure>
+<div class="masonry">
+<figure><img src="d-mushaf-story.jpg" alt="مصحفك هدية لضيوف الرحمن: ستوري حملة الحج بسعر سهم 39 ريالًا" loading="lazy"><figcaption><b>مصحفك هدية لضيوف الرحمن</b>ستوري حملة الحج بسعر سهم 39 ريالًا</figcaption></figure>
+<figure><img src="d-water-waqf.jpg" alt="أوقف عبوات ماء: إعلان سقيا ضيوف الرحمن بسهم 20 ريالًا" loading="lazy"><figcaption><b>أوقف عبوات ماء</b>إعلان سقيا ضيوف الرحمن بسهم 20 ريالًا</figcaption></figure>
+<figure><img src="d-mushaf-ad.jpg" alt="مصحفك هدية: إعلان المتجر لموسم الحج" loading="lazy"><figcaption><b>مصحفك هدية</b>إعلان المتجر لموسم الحج</figcaption></figure>
+<figure><img src="d-suqya.jpg" alt="سقيا الماء: منشور الحملة من الميدان" loading="lazy"><figcaption><b>سقيا الماء</b>منشور الحملة من الميدان</figcaption></figure>
+<figure><img src="d-kafala.jpg" alt="كفالة يتيم: منشور حملة الكفالة" loading="lazy"><figcaption><b>كفالة يتيم</b>منشور حملة الكفالة</figcaption></figure>
+<figure><img src="d-tafreej.jpg" alt="فرّج كربة: منشور الصدقة: بادر بما لديك" loading="lazy"><figcaption><b>فرّج كربة</b>منشور الصدقة: بادر بما لديك</figcaption></figure>
+<figure><img src="d-juma1.jpg" alt="يوم الجمعة: محتوى أسبوعي للحسابات" loading="lazy"><figcaption><b>يوم الجمعة</b>محتوى أسبوعي للحسابات</figcaption></figure>
+<figure><img src="d-juma2.jpg" alt="جمعة مباركة: محتوى أسبوعي للحسابات" loading="lazy"><figcaption><b>جمعة مباركة</b>محتوى أسبوعي للحسابات</figcaption></figure>
+<figure><img src="d-cover.jpg" alt="يدًا بيد.. لنصنع خيرًا يمتد: غلاف الحسابات بالهوية الجديدة" loading="lazy"><figcaption><b>يدًا بيد.. لنصنع خيرًا يمتد</b>غلاف الحسابات بالهوية الجديدة</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="band" id="experience">
+<div class="wrap">
+<h2>الخبرات العملية</h2>
+<p class="lead">من الاتصال المؤسسي إلى إدارة التسويق، مع خبرة ميدانية في خدمة ضيوف الرحمن.</p>
+<div class="tl" id="tl"></div>
+</div>
+</section>
+
+<section class="band" id="education" style="padding-top:0">
+<div class="wrap two">
+<div class="box">
+<h3>التعليم</h3>
+<div class="edu"><b>ماجستير الاتصال والإعلام</b><span>جامعة الملك عبدالعزيز · المسار الأكاديمي بالرسالة · المعدل 4.88 من 5 · التخرج المتوقع أغسطس 2027</span></div>
+<div class="edu"><b>بكالوريوس الإعلام، تخصص العلاقات العامة</b><span>جامعة أم القرى · 2020 · المعدل 3.84 من 4، مرتبة الشرف الأولى</span></div>
+<div class="edu"><b>دبلوم التسويق الرقمي</b><span>Entrepreneurship College Inc. · 2023</span></div>
+<h3 style="margin-top:18px">الشهادات والتدريب</h3>
+<div class="edu"><b>Google Ads و Google Analytics</b><span>Google · 2023</span></div>
+<div class="edu"><b>شهادة HubSpot</b><span>أكاديمية HubSpot · 2023</span></div>
+<div class="edu"><b>برنامج تطوير المهارات</b><span>مسك الخيرية · مسار تنمية الموارد المالية ومسار إدارة المشاريع</span></div>
+</div>
+<div class="box">
+<h3>المهارات</h3>
+<p style="color:var(--mute);margin-bottom:8px">الإعلام الرقمي</p>
+<div class="chips" style="margin-bottom:14px"><span>إدارة منصات التواصل</span><span>تخطيط المحتوى وكتابته</span><span>حملات المؤثرين</span><span>Google Ads</span><span>Meta Ads</span><span>Snapchat Ads</span><span>SEO</span><span>اختبارات A/B</span></div>
+<p style="color:var(--mute);margin-bottom:8px">الاتصال وتنمية الموارد</p>
+<div class="chips" style="margin-bottom:14px"><span>العلاقات الإعلامية</span><span>البيانات الصحفية</span><span>الاتصال في الأزمات</span><span>كتابة المقترحات والمنح</span><span>عروض الشراكة والرعاية</span><span>الفعاليات</span><span>المراسم والتشريفات</span><span>التحدث أمام الجمهور</span></div>
+<p style="color:var(--mute);margin-bottom:8px">التحليل والأدوات</p>
+<div class="chips" style="margin-bottom:14px"><span>Power BI</span><span>Google Analytics 4</span><span>Meta Business Suite</span><span>Excel متقدم</span><span>أنظمة CRM</span><span>Canva</span></div>
+<p style="color:var(--mute);margin-bottom:8px">اللغات</p>
+<div class="chips"><span>العربية (اللغة الأم)</span><span>الإنجليزية (ممتازة)</span></div>
+</div>
+</div>
+</section>
+
+<footer class="band" id="contact">
+<div class="wrap">
+<div>
+<h2>يسعدني تواصلكم</h2>
+<p>متاح للعمل فورًا في مكة المكرمة، ومستعد للعمل في جدة. أبحث عن دور في الاتصال المؤسسي أو التسويق أو تنمية الموارد والشراكات أو المسؤولية الاجتماعية، في جهة حكومية أو شركة كبرى أو القطاع غير الربحي.</p>
+</div>
+<div class="cl">
+<div><small>الجوال</small><span class="contact-line" id="phL" dir="ltr">+966 •• ••• ••••</span><button class="copy-x" id="phB" type="button">إظهار الرقم</button></div>
+<div><small>البريد</small><span class="contact-line" id="emL" dir="ltr"></span><button class="copy" id="emB" type="button">نسخ</button></div>
+<div><small>LinkedIn</small><a class="contact-line" href="https://www.linkedin.com/in/nawaf-aljoudi">linkedin.com/in/nawaf-aljoudi</a></div>
+<div><small>ملف الأعمال</small><a class="contact-line" href="https://aljoudi-n.github.io">aljoudi-n.github.io</a></div>
+</div>
+</div>
+</footer>
+
+<script>
+{
+const stats=[
+["2.6 مليون","ريال جمعتها عبر الحملات والجهات المانحة والأوقاف"],
+["3","منصات إعلانية أدرتها: Google وMeta وسناب شات"],
+
+["50","حملة مع المؤثرين"],
+["400","بلاغ وشكوى وجولة ميدانية في مواسم الحج"],
+
+["17","فعالية، أكبرها نحو 350 حاضرًا"],
+["877%","عائد على الإنفاق الإعلاني في حملات 2024"],["10.9×","نمو تبرعات متجر يدًا بيد في 2026 مقارنة بسنته الأولى"],["44","رابط تتبع للمؤثرين جلبت 21% من تبرعات المتجر"]];
+document.getElementById('statGrid').innerHTML=stats.map(s=>`<div class="stat"><div class="n">${s[0]}</div><div class="l">${s[1]}</div></div>`).join('');
+
+
+const sh=[["التحويل لحساب الوقف",66],["متجر الجمعية",27],["التحويل للحساب العام",7]];
+document.getElementById('sharaiBars').innerHTML=sh.map(p=>`<div class="bar"><span>${p[0]}</span><i style="width:${(p[1]/sh[0][1]*100).toFixed(1)}%"></i><em>${p[1]}%</em></div>`).join('');
+
+
+const mo=[["ينا",7.0],["فبر",7.2],["مار",12.4],["أبر",4.9],["مايو",48.1],["يون",3.6],["يول",3.8],["أغس",4.0],["سبت",4.3],["أكت",4.4]];
+document.getElementById('monthCols').innerHTML=mo.map(m=>`<div class="${m[1]>30?'pk':''}" style="height:${(m[1]/48.1*100).toFixed(1)}%" title="${m[0]}">${m[1]>30?'<b>48%</b>':''}<span>${m[0]}</span></div>`).join('');
+
+const jobs=[
+{t:"مدير التسويق وتنمية الموارد",o:"جمعية يدًا بيد للخدمات الإنسانية (غير ربحية)",w:"أبريل 2025 – الآن · منطقة مكة المكرمة",b:["قيادة فريق من 3 أشخاص، وإعداد الخطة التسويقية السنوية وتقويم الحملات حول رمضان وموسم الحج والأعياد.","إدارة الحملات الممولة على Google وMeta وسناب شات، واختبار الإعلانات والرسائل، وتحسين الظهور في محركات البحث.","تنمية الموارد عبر الحملات الرقمية والمؤسسات المانحة والتجار.","بناء الشراكات مع الشركات والجهات المانحة، ورفع التقارير لهم عن أوجه صرف دعمهم.","رفع تبرعات المتجر 10.9 أضعاف بين 2025 و2026، ونحو 12 ألف متبرع.","إدارة الموقع ومتجر التبرعات، ولوحة متابعة لنتائج الحملات والإيرادات."]},
+{t:"مراقب حركة، ثم كاتب محتوى (موسمي) · مركز النقل العام",o:"الهيئة الملكية لمدينة مكة المكرمة والمشاعر المقدسة",w:"فبراير – مارس 2026، ومايو – يونيو 2026",b:["كتابة التنبيهات والإعلانات والرسائل التوعوية للركاب والحجاج، وصياغة المراسلات والتعاميم.","الإشراف على فرق التصوير والتغطية الميدانية، ومتابعة حسابات المركز ورفع تقارير التفاعل.","تمثيل الهيئة في غرفة القيادة والسيطرة في حج 1447هـ."]},
+{t:"مراقب خدمات حج وعمرة (موسمي)",o:"وزارة الحج والعمرة",w:"مواسم حج 1444 و1445 و1446 هـ",b:["مراقبة خدمات الشركات للحجاج في المساكن والنقل والإعاشة والمشاعر المقدسة.","نحو 400 بلاغ وشكوى وجولة ميدانية، تُفتح وتُتابع في نظام CRM حتى الإغلاق.","التنسيق مع فرع الوزارة ولجنة المراجعة والتدقيق ومراكز عناية نسك."]},
+{t:"مدير التسويق وتنمية الموارد",o:"جمعية الدعوة والإرشاد وتوعية الجاليات بالشرائع (غير ربحية)",w:"أبريل 2023 – أبريل 2025 · مكة المكرمة",b:["قيادة حملات وقف الجمعية، أكبر مصدر لتبرعاتها.","رفعت التبرعات الرقمية 3.6 أضعاف بين 2023 و2024، بعائد على الاستثمار 509% ثم 877%.","إدارة الحملات في منصات التواصل والبريد والإعلانات الممولة، وإنتاج المحتوى والتقارير السنوية.","العمل مديرًا للمشاريع بالتوازي (مايو 2024 – يناير 2025): تخطيط المشاريع الاجتماعية وكتابة المقترحات وتقارير التمويل."]},
+{t:"أخصائي اتصال مؤسسي (متدرب)",o:"شركة المياه الوطنية",w:"يونيو 2018 – مايو 2019 · مكة المكرمة",b:["كتابة البيانات الصحفية والمقالات والنشرات بالعربية والإنجليزية.","متابعة حملات الاتصال بمؤشرات الأداء ورفع نتائجها."]}];
+document.getElementById('tl').innerHTML=jobs.map(j=>`<div class="job"><h3>${j.t}</h3><div class="org">${j.o}</div><div class="when">${j.w}</div><ul>${j.b.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('');
+
+
+{const u=['Nawaf','s2010'].join('_'),d=['hotmail','com'].join('.'),e=u+String.fromCharCode(64)+d;const L=document.getElementById('emL'),B=document.getElementById('emB');L.textContent=e;B.dataset.c=e;
+const p=['+966','56','300','0961'],P=document.getElementById('phL'),Q=document.getElementById('phB');let shown=false;
+Q.addEventListener('click',async()=>{if(!shown){P.textContent=p.join(' ');P.setAttribute('dir','ltr');shown=true;Q.textContent='نسخ';return}
+try{await navigator.clipboard.writeText(p.join(''));Q.textContent='تم النسخ'}catch(x){Q.textContent='انسخه يدويًا'}setTimeout(()=>Q.textContent='نسخ',1600)});}
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.dataset.c);b.textContent='تم النسخ'}catch(e){b.textContent='انسخه يدويًا'}setTimeout(()=>b.textContent='نسخ',1800)}));
+}
+</script>
+</body>
+</html>
